@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# 🏷️ BidWorld - Online Auction Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack auction web application where users can browse products, place bids, and track winning bids. Built with **React 18** frontend, **Redux Toolkit**, and **Tailwind CSS** for responsive UI.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **User Authentication**: Secure login and registration
+- **Category Browsing**: Explore products by category
+- **Product Details**: View description, dimensions, verification status, and auction timer
+- **Bidding System**: Place bids with minimum bid validation
+- **Winning Bid List**: Track winning bids and payment status
+- **Admin Panel**: Edit products and manage auctions
+- **3D Product View**: Interactive 3D models using Three.js
+- **Responsive Design**: Mobile-friendly layout
+- **Animations**: Smooth transitions with Framer Motion
+- **Notifications**: Toast notifications for bidding status
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React 18** - User interface
+- **Redux Toolkit & React Redux** - State management
+- **React Router DOM v6** - Routing
+- **Axios** - HTTP client
+- **Framer Motion** - Animations
+- **Three.js & Drei** - 3D product views
+- **React Toastify** - Notifications
+- **React Moment** - Date formatting
+- **Tailwind CSS** - Styling
 
-### `npm test`
+### Backend (Assumed / API)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js & Express** - REST API
+- **MongoDB / PostgreSQL** - Database (depending on implementation)
+- **JWT Authentication** - Secure login
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+frontend/
+├── public/ # Static assets (favicon, index.html)
+├── src/
+│ ├── components/ # Reusable UI components (cards, tables, modals)
+│ ├── pages/ # Main application pages (CategoryProducts, ProductDetails, WinningBidList, ProductEdit)
+│ ├── redux/ # Redux slices & store
+│ ├── hooks/ # Custom hooks (auth, redirect)
+│ ├── router/ # Layouts, containers, typography
+│ ├── styles/ # Tailwind CSS and custom styles
+│ └── App.jsx # Main app component
+├── package.json
+├── tailwind.config.js
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Quick Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js 16+
+- npm or yarn
+- Backend API running (for full functionality)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Create .env file with API URL
+REACT_APP_API_URL=http://localhost:5000/api
 
-## Learn More
+# Start development server
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will run at http://localhost:3001
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build Production
 
-### Code Splitting
+npm run build
+🌐 API Endpoints (Example)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+GET /products - Fetch all products
 
-### Analyzing the Bundle Size
+GET /products/:id - Product details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+POST /bids - Place a bid
 
-### Making a Progressive Web App
+GET /winning-bids - Get user winning bids
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+PUT /products/:id - Admin product update
 
-### Advanced Configuration
+POST /auth/login - User login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+POST /auth/register - User registration
 
-### Deployment
+🔧 Configuration
+Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+REACT_APP_API_URL - Base URL of backend API
 
-### `npm run build` fails to minify
+Tailwind Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Colors, shadows, and themes defined in tailwind.config.js:
+
+primary: #204C41
+
+green: #5BBB7B
+
+green_100: #EEF8F2
+
+gray_100: #6C7278
+
+text: #222222
+
+🤝 Contributing
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m 'Add YourFeature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a Pull Request
+
+📝 License
+
+This project is licensed under the MIT License.
+
+BidWorld - Experience bidding like never before! 🏷️💸
+```
