@@ -66,7 +66,6 @@ Final Project/
 │   │   └── App.jsx           # Main app component
 │   ├── package.json
 │   ├── tailwind.config.js
-│   └── README.md
 ├── .gitignore
 └── README.md
 ```
