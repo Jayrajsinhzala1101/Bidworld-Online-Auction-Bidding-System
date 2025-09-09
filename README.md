@@ -38,18 +38,19 @@ A full-stack auction web application where users can browse products, place bids
 ## 📁 Project Structure
 
 frontend/
-├── public/ # Static assets (favicon, index.html)
+├── public/                # Static assets (favicon, index.html)
 ├── src/
-│ ├── components/ # Reusable UI components (cards, tables, modals)
-│ ├── pages/ # Main application pages (CategoryProducts, ProductDetails, WinningBidList, ProductEdit)
-│ ├── redux/ # Redux slices & store
-│ ├── hooks/ # Custom hooks (auth, redirect)
-│ ├── router/ # Layouts, containers, typography
-│ ├── styles/ # Tailwind CSS and custom styles
-│ └── App.jsx # Main app component
+│   ├── components/        # Reusable UI components (cards, tables, modals)
+│   ├── pages/             # Main application pages (CategoryProducts, ProductDetails, WinningBidList, ProductEdit)
+│   ├── redux/             # Redux slices & store
+│   ├── hooks/             # Custom hooks (auth, redirect)
+│   ├── router/            # Layouts, containers, typography
+│   ├── styles/            # Tailwind CSS and custom styles
+│   └── App.jsx            # Main app component
 ├── package.json
 ├── tailwind.config.js
 └── README.md
+
 
 ## 🚀 Quick Start
 
@@ -77,7 +78,7 @@ npm start
 
 The app will run at http://localhost:3001
 
-Build Production
+### Build Production
 
 npm run build
 🌐 API Endpoints (Example)
@@ -96,7 +97,7 @@ POST /auth/login - User login
 
 POST /auth/register - User registration
 
-🔧 Configuration
+###🔧 Configuration
 Environment Variables
 
 REACT_APP_API_URL - Base URL of backend API
@@ -115,7 +116,7 @@ gray_100: #6C7278
 
 text: #222222
 
-🤝 Contributing
+###🤝 Contributing
 
 Fork the repository
 
@@ -127,9 +128,8 @@ Push to the branch (git push origin feature/YourFeature)
 
 Open a Pull Request
 
-📝 License
+###📝 License
 
 This project is licensed under the MIT License.
 
 BidWorld - Experience bidding like never before! 🏷️💸
-```
