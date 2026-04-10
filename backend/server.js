@@ -13,7 +13,7 @@ const errorHandler = require("./middleware/errorMiddleWare");
 const passport = require("passport")
 const cookieSession = require("cookie-session")
 const app = express();
-const passportSetup = require("../backend/passport")
+// const passportSetup = require("../backend/passport")
 const authRoute = require("../backend/routes/auth")
 
 app.use(express.json());
