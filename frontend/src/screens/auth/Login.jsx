@@ -1,4 +1,4 @@
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+
 import {
   Caption,
   Container,
@@ -139,7 +139,7 @@ export const Login = () => {
             By clicking the login button, you agree to Bidworld's Terms of
             Service and Privacy Policy.{" "}
             <span className="text-green underline"> <a href="/terms">Terms & Conditions</a></span> &{" "}
-            <span className="text-green underline"><a href="">Privacy Policy</a></span>.
+            <span className="text-green underline"><a href="/policy">Privacy Policy</a></span>.
           </p>
         </form>
         <div className="bg-green w-96 h-96 rounded-full opacity-20 blur-3xl absolute bottom-96 right-0"></div>

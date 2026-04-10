@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import authService from '../services/authFeature';
 import {toast} from "react-toastify";
-import axios from 'axios';
+
 const initialState = {
   user:JSON.parse(localStorage.getItem("user")) || null,
   users:[],
