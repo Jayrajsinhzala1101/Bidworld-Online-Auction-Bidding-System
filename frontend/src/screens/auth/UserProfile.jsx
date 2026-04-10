@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Caption, Title } from "../../router";
-import { User2 } from "../../components/hero/Hero";
 import { commonClassNameOfInput, PrimaryButton } from "../../components/common/Design";
 import { useRedirectLoggedOutUser } from "../../hooks/useRedirectLoggedOutUser";
 import { useDispatch, useSelector } from "react-redux";

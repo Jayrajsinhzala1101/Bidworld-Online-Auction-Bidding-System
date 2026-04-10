@@ -3,8 +3,6 @@ import { Title } from "../../router";
 import { useRedirectLoggedOutUser } from "../../hooks/useRedirectLoggedOutUser";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllWonedProductOfUser } from "../../redux/features/productSlice";
-import { Table } from "../../components/Table";
-import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+
 import { Caption, Container, CustomNavLink, Loader, PrimaryButton, Title } from "../../router";
 import { commonClassNameOfInput } from "../../components/common/Design";
 import {useDispatch, useSelector} from "react-redux";
