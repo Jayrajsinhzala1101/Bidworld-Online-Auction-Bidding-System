@@ -1,9 +1,6 @@
 import PropTypes from "prop-types";
 import { RiAuctionFill } from "react-icons/ri";
-import { GiTakeMyMoney } from "react-icons/gi";
-import { MdOutlineFavorite } from "react-icons/md";
 import { BiCategory } from "react-icons/bi";
-import { Caption, PrimaryButton, ProfileCard, Title } from "../common/Design";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Title, ProfileCard, DateFormatter } from "../router";
 import { TiEyeOutline } from "react-icons/ti";
-import { User2 } from "../components/hero/Hero";
+
 import { useRedirectLoggedOutUser } from "../hooks/useRedirectLoggedOutUser";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllUser } from "../redux/features/authSlice";

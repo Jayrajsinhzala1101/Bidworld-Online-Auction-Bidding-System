@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { IoSearchOutline } from "react-icons/io5";
 import { Container, CustomNavLink, CustomNavLinkList, ProfileCard } from "../../router";
-import { User1 } from "../hero/Hero";
+
 import { menulists } from "../../utils/data";
 import { ShowOnLogin, ShowOnLogout } from "../../utils/HiddenLink";
 import { getuserProfile, selectIsLoggedIn } from "../../redux/features/authSlice";

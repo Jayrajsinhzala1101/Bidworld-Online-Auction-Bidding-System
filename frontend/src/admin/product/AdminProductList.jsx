@@ -3,7 +3,7 @@ import { Table } from "../../components/Table";
 import { useRedirectLoggedOutUser } from "../../hooks/useRedirectLoggedOutUser";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { deleteProduct, getAllProduct, getAllProductOfUser, } from "../../redux/features/productSlice";
+import { getAllProduct } from "../../redux/features/productSlice";
 
 export const AdminProductList = () => {
   useRedirectLoggedOutUser("/");

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { categorylists } from "../../utils/data";
 import { CategoryCard, Container, Heading } from "../../router";
@@ -7,7 +7,7 @@ import { getAllCategory } from "../../redux/features/categorySlice";
 
 export const CategorySlider = () => {
   const dispatch = useDispatch();
-  const { categorys } = useSelector((state) => state.category);
+
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -35,7 +35,7 @@ import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Blog from "./components/Blog.jsx";
 import Service from "./components/Service.jsx";
-import TermsAndConditions from "./components/Terms.jsx";
+
 import Terms from "./components/Terms.jsx";
 import Policy from "./components/Policy.jsx";
 import { CategoryProducts } from "./screens/product/CategoryProducts.jsx";
@@ -45,7 +45,7 @@ function App() {
   const dispatch = useDispatch();
   // const navigate = useNavigate();
 
-  const { isLoggedIn } = useSelector((state) => state.auth);
+
 
   useEffect(() => {
     dispatch(getLogInStatus());

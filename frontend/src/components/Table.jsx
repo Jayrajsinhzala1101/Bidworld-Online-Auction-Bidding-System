@@ -55,7 +55,7 @@ export const Table = ({ products, isWon, isAdmin, handleSellProduct, handleDelet
                 <td className="px-6 py-4">₹{product?.price}</td>
                 <td className="px-6 py-4">₹{product?.biddingPrice}</td>
                 <td className="px-6 py-4">
-                  <img className="w-10 h-10 rounded-md" src={product?.image?.filePath} alt="image" />
+                  <img className="w-10 h-10 rounded-md" src={product?.image?.filePath} alt={product?.title} />
                 </td>
                 {!isWon && (
                   <>
