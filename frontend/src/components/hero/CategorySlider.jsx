@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { categorylists } from "../../utils/data";
 import { CategoryCard, Container, Heading } from "../../router";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getAllCategory } from "../../redux/features/categorySlice";
 
 export const CategorySlider = () => {
